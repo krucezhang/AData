@@ -1,0 +1,18 @@
+################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/AData.Core/bin
+/AData.Core/obj
+/AData.MainForm/bin
+/AData.MainForm/obj
+/AData.MongoDB/bin
+/AData.MongoDB/obj
+/AData.MySQL/bin
+/AData.MySQL/bin
+/packages
+/AData.SQLServer/obj
+/AData.SQLServer/obj
+*.user
+/AData.SQLServer.Model/obj
+/AData.SQLServer.Model/bin

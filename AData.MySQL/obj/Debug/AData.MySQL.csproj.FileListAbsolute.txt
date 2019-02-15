@@ -1,0 +1,5 @@
+D:\wyn\Test\AData\AData.MySQL\bin\Debug\AData.MySQL.dll
+D:\wyn\Test\AData\AData.MySQL\bin\Debug\AData.MySQL.pdb
+D:\wyn\Test\AData\AData.MySQL\obj\Debug\AData.MySQL.csproj.CoreCompileInputs.cache
+D:\wyn\Test\AData\AData.MySQL\obj\Debug\AData.MySQL.dll
+D:\wyn\Test\AData\AData.MySQL\obj\Debug\AData.MySQL.pdb
