@@ -4,8 +4,8 @@
 /.vs
 /AData.Core/bin
 /AData.Core/obj
-/AData.MainForm/bin
-/AData.MainForm/obj
+/AData.WebMvc/bin
+/AData.WebMvc/obj
 /AData.MongoDB/bin
 /AData.MongoDB/obj
 /AData.MySQL/bin
