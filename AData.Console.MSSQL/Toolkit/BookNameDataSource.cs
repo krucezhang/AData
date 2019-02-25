@@ -16,9 +16,9 @@ namespace AData.Console.MSSQL.Toolkit
         private static readonly string[] _attributes =
         {
             // Environ
-            "Desert", "Tundra", "Mountain", "Space", "Field", "Urban",
+            "數學", "线性", "IT", "探索", "一个月包教包会", "30分钟立见成效",
             // Stealth and cunning
-            "Hidden", "Covert", "Uncanny", "Scheming", "Decisive",
+            "JavaScript架构", "设计模式", "Uncanny", "Scheming", "Decisive",
             // Volitility
             "Rowdy", "Dangerous", "Explosive", "Threatening", "Warring",
             // Needs correction
