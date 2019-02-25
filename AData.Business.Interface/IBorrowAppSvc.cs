@@ -5,7 +5,7 @@ namespace AData.Business.Interface
 {
     public interface IBorrowAppSvc
     {
-        void Create(int count);
+        void Create(borrows borrows);
 
         IEnumerable<borrows> GetAll();
 

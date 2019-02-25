@@ -31,14 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataGenerator, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DataGenerator.4.0.0.31\lib\net45\DataGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,10 +57,6 @@
       <Project>{e139e47e-1d31-4609-9b1e-a6c18b93a6aa}</Project>
       <Name>AData.Business.Interface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AData.Common\AData.Common.csproj">
-      <Project>{af92ce42-389f-4fc0-9941-d94285cd9446}</Project>
-      <Name>AData.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AData.MongoDB\AData.MongoDB.csproj">
       <Project>{4db2c70d-c014-4d35-bf9d-d08089877b96}</Project>
       <Name>AData.MongoDB</Name>
@@ -91,7 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
