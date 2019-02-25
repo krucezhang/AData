@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{592732D1-E5C9-4740-A1AD-DB3881B507A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AData.Business</RootNamespace>
+    <AssemblyName>AData.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BorrowAppSvc.cs" />
+    <Compile Include="CategoryAppSvc.cs" />
+    <Compile Include="BookAppSvc.cs" />
+    <Compile Include="Extentions.cs" />
+    <Compile Include="IdentityGenerator.cs" />
+    <Compile Include="ManagerAppSvc.cs" />
+    <Compile Include="ReturnBookAppSvc.cs" />
+    <Compile Include="StudentAppSvc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketsAppSvc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AData.Business.Interface\AData.Business.Interface.csproj">
+      <Project>{e139e47e-1d31-4609-9b1e-a6c18b93a6aa}</Project>
+      <Name>AData.Business.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.MongoDB\AData.MongoDB.csproj">
+      <Project>{4db2c70d-c014-4d35-bf9d-d08089877b96}</Project>
+      <Name>AData.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.MySQL\AData.MySQL.csproj">
+      <Project>{1bed0947-07d7-4702-8c05-5db3faf431d1}</Project>
+      <Name>AData.MySQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.Persistence.Interface\AData.Persistence.Interface.csproj">
+      <Project>{ac3eeff3-1682-4564-9752-59b02de25c3c}</Project>
+      <Name>AData.Persistence.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.Persistence\AData.Persistence.csproj">
+      <Project>{c6ccc9e4-4aa5-44f8-98db-da6483e47fda}</Project>
+      <Name>AData.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.SQLServer\AData.SQLServer.csproj">
+      <Project>{92dafb04-7d2c-4667-8649-52becdf1f2be}</Project>
+      <Name>AData.SQLServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
