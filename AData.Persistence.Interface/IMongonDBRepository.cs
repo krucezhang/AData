@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AData.Persistence.Interface
 {
-    public interface IMongonDBRepository<TEntity>: IDisposable where TEntity : Entity
+    public interface IMongonDBRepository<TEntity> : IDisposable where TEntity : Entity
     {
         TEntity GetById(string id);
 
