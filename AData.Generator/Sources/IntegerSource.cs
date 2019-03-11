@@ -21,11 +21,6 @@ namespace AData.DataGenerator.Sources
         {
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="IntegerSource"/> class.
-        /// </summary>
-        /// <param name="min">The minimum.</param>
-        /// <param name="max">The maximum.</param>
         public IntegerSource(int min, int max)
             : base(new[] { typeof(short), typeof(int), typeof(long) })
         {

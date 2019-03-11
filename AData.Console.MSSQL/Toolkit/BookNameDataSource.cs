@@ -20,26 +20,8 @@ namespace AData.Console.MSSQL.Toolkit
 
         private static readonly string[] _objects =
         {
-            // Large cats
-            "Panther", "Wildcat", "Tiger", "Lion", "Cheetah", "Cougar", "Leopard",
-            // Snakes
-            "Viper", "Cottonmouth", "Python", "Boa", "Sidewinder", "Cobra",
-            // Other predators
-            "Grizzly", "Jackal", "Falcon",
-            // Prey
-            "Wildabeast", "Gazelle", "Zebra", "Elk", "Moose", "Deer", "Stag", "Pony",
-            // HORSES!
-            "Horse", "Stallion", "Foal", "Colt", "Mare", "Yearling", "Filly", "Gelding",
-            // Occupations
-            "Nomad", "Wizard", "Cleric", "Pilot",
-            // Technology
-            "Mainframe", "Device", "Motherboard", "Network", "Transistor", "Packet", "Robot", "Android", "Cyborg",
-            // Sea life
-            "Octopus", "Lobster", "Crab", "Barnacle", "Hammerhead", "Orca", "Piranha",
-            // Weather
-            "Storm", "Thunder", "Lightning", "Rain", "Hail", "Sun", "Drought", "Snow",
-            // Other
-            "Warning", "Presence", "Weapon"
+            "地理", "生物", "化学", "语文", "作文", "反射", "委托",
+            "装箱拆箱"
         };
 
         /// <summary>

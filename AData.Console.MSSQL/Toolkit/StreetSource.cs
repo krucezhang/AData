@@ -2,11 +2,7 @@
 using AData.DataGenerator;
 using AData.DataGenerator.Sources;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AData.Console.MSSQL.Toolkit
 {
@@ -18,9 +14,7 @@ namespace AData.Console.MSSQL.Toolkit
         private static readonly string[] _suffix = { "AVE", "BLVD", "CTR", "CIR", "CT", "DR", "HWY", "LN", "PKWY", "ST" };
         private static readonly string[] _streets =
         {
-            "Second", "Third", "First", "Fourth", "Park", "Fifth", "Main",
-            "Sixth", "Oak", "Seventh", "Pine", "Maple", "Cedar", "Eighth",
-            "Elm", "View", "Washington", "Ninth", "Lake", "Hill"
+             "太乙路", "太白路", "太华路", "长樱路", "案板街","竹笆市", "骡马市", "西木头市", "安仁坊", "端履门", "德福巷","洒金桥", "冰窖巷", "菊花园", "下马陵（蛤蟆陵)", "粉巷", "索罗巷","后宰门", "书院门", "炭市街", "马厂子", "景龙池", "甜水井", "柏树林"
         };
 
         /// <summary>
@@ -41,9 +35,8 @@ namespace AData.Console.MSSQL.Toolkit
         {
             string street = _streets[RandomGenerator.Current.Next(0, _streets.Length)];
             string number = RandomGenerator.Current.Next(10, 8000).ToString(CultureInfo.InvariantCulture);
-            string suffix = _suffix[RandomGenerator.Current.Next(0, _suffix.Length)];
 
-            return $"{number} {street} {suffix}";
+            return $"{number} {street}";
         }
 
     }

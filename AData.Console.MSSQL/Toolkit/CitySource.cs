@@ -15,25 +15,9 @@ namespace AData.Console.MSSQL.Toolkit
         private static readonly Type[] _types = { typeof(string) };
         private static readonly string[] _cities =
         {
-            "New York", "Los Angeles", "Chicago", "Houston", "Philadelphia",
-            "Phoenix", "San Diego", "San Antonio", "Dallas", "Detroit", "San Jose",
-            "Indianapolis", "Jacksonville", "San Francisco", "Columbus", "Austin",
-            "Memphis", "Baltimore", "Charlotte", "Fort Worth", "Boston", "Milwaukee",
-            "El Paso", "Washington", "Nashville-Davidson", "Seattle", "Denver",
-            "Las Vegas", "Portland", "Oklahoma City", "Tucson", "Albuquerque",
-            "Atlanta", "Long Beach", "Kansas City", "Fresno", "New Orleans",
-            "Cleveland", "Sacramento", "Mesa", "Virginia Beach", "Omaha",
-            "Colorado Springs", "Oakland", "Miami", "Tulsa", "Minneapolis",
-            "Honolulu", "Arlington", "Wichita", "St. Louis", "Raleigh", "Santa Ana",
-            "Cincinnati", "Anaheim", "Tampa", "Toledo", "Pittsburgh", "Aurora",
-            "Bakersfield", "Riverside", "Stockton", "Corpus Christi",
-            "Lexington-Fayette", "Buffalo", "St. Paul", "Anchorage", "Newark",
-            "Plano", "Fort Wayne", "St. Petersburg", "Glendale", "Lincoln",
-            "Norfolk", "Jersey City", "Greensboro", "Chandler", "Birmingham",
-            "Henderson", "Scottsdale", "North Hempstead", "Madison", "Hialeah",
-            "Baton Rouge", "Chesapeake", "Orlando", "Lubbock", "Garland", "Akron",
-            "Rochester", "Chula Vista", "Reno", "Laredo", "Durham", "Modesto",
-            "Huntington", "Montgomery", "Boise", "Arlington", "San Bernardino"
+            "东城区", "西城区", "崇文区", "宣武区", "朝阳区", "丰台区", "石景山区", "海淀区", "门头沟区", "房山区", "通州区", "顺义区", "昌平区", "大兴区", "怀柔区",
+            "平谷区", "密云县", "延庆县", "延庆镇","西安市","延安市","铜川市","渭南市","咸阳市","宝鸡市","汉中市",
+            "榆林市","安康市","商洛市"
         };
 
         /// <summary>
