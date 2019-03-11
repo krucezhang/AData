@@ -2,6 +2,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AData.DataGenerator;
 using AData.GeneratorTest.Models;
+using AData.DataGenerator.Sources;
 
 namespace AData.GeneratorTest
 {
@@ -16,9 +17,16 @@ namespace AData.GeneratorTest
                     {
                         e.AutoMap();
 
-                        e.Property(p => p.)
+                        e.Property(p => p.Name).DataSource<NameSource>();
                     })
                  );
+
+            var managers = generator.List<User>(10);
+
+            foreach (User item in managers)
+            {
+                System.Console.WriteLine(item);
+            }
         }
     }
 }

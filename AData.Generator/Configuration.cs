@@ -2,6 +2,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +40,11 @@ namespace AData.DataGenerator
             });
 
             return dataSources as IEnumerable<IDataSourceDiscover>;
+        }
+
+        private static IEnumerable<Type> GetTypesAssignableFrom<T>(Assembly assembly)
+        {
+            return assembly.GetTypesAssignableFrom<T>();
         }
 
         public void ClearCache()

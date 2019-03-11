@@ -1,14 +1,10 @@
 ﻿using AData.Business.Interface;
 using AData.Console.MSSQL.Toolkit;
+using AData.DataGenerator;
+using AData.DataGenerator.Sources;
 using AData.SQLServer.Models;
-using DataGenerator;
-using DataGenerator.Sources;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AData.Console.MSSQL.Controllers
 {

@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -41,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyExtensions.cs" />
+    <Compile Include="AssemblyResolver.cs" />
     <Compile Include="Builder\ClassMappingBuilder.cs" />
     <Compile Include="Builder\ConfigurationBuilder.cs" />
     <Compile Include="Builder\MemberConfigurationBuilder.cs" />
@@ -49,21 +55,37 @@
     <Compile Include="GenerateContext.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="IDataSource.cs" />
+    <Compile Include="IDataSourceDiscover.cs" />
     <Compile Include="IGenerateContext.cs" />
     <Compile Include="IMappingContext.cs" />
     <Compile Include="MappingContext.cs" />
     <Compile Include="Reflection\DelegateFactory.cs" />
     <Compile Include="Reflection\DynamicMethodFactory.cs" />
+    <Compile Include="Reflection\FieldAccessor.cs" />
     <Compile Include="Reflection\IMemberAccessor.cs" />
     <Compile Include="MemberMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\IMemberInfo.cs" />
     <Compile Include="Reflection\IMethodAccessor.cs" />
     <Compile Include="Reflection\MemberAccessor.cs" />
+    <Compile Include="Reflection\MethodAccessor.cs" />
     <Compile Include="Reflection\PropertyAccessor.cs" />
     <Compile Include="Reflection\ReflectionExtensions.cs" />
     <Compile Include="Reflection\ReflectionHelper.cs" />
     <Compile Include="Reflection\TypeAccessor.cs" />
+    <Compile Include="Sources\DataSourceBase.cs" />
+    <Compile Include="Sources\DataSourceContainName.cs" />
+    <Compile Include="Sources\DataSourceMatchName.cs" />
+    <Compile Include="Sources\DataSourcePropertyType.cs" />
+    <Compile Include="Sources\DateTimeSource.cs" />
+    <Compile Include="Sources\DateTimeSourceExtensions.cs" />
+    <Compile Include="Sources\EnumSource.cs" />
+    <Compile Include="Sources\FactoryDataSource.cs" />
+    <Compile Include="Sources\IntegerSource.cs" />
+    <Compile Include="Sources\IntegerSourceExtensions.cs" />
+    <Compile Include="Sources\ListDataSource.cs" />
+    <Compile Include="Sources\NameSource.cs" />
+    <Compile Include="Sources\ValueSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AData.Common\AData.Common.csproj">

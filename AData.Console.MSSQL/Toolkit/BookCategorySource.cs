@@ -1,5 +1,6 @@
-﻿using DataGenerator;
-using DataGenerator.Sources;
+﻿using AData.Common;
+using AData.DataGenerator;
+using AData.DataGenerator.Sources;
 using System;
 
 namespace AData.Console.MSSQL.Toolkit

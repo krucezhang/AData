@@ -1,10 +1,9 @@
 ﻿using AData.Business.Interface;
 using AData.Console.MSSQL.Toolkit;
+using AData.DataGenerator;
 using AData.MongoDB;
 using AData.MongoDB.Models;
-using DataGenerator;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace AData.Console.MSSQL.Controllers
 {

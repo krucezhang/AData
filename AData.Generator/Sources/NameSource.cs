@@ -1,11 +1,13 @@
 ﻿using AData.Common;
-using AData.DataGenerator;
-using AData.DataGenerator.Sources;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AData.Console.MSSQL.Toolkit
+namespace AData.DataGenerator.Sources
 {
-    public class BookNameDataSource : DataSourceMatchName
+    public class NameSource : DataSourceMatchName
     {
         private static readonly string[] _names = { "Name" };
         private static readonly Type[] _types = { typeof(string) };
@@ -13,9 +15,19 @@ namespace AData.Console.MSSQL.Toolkit
         private static readonly string[] _attributes =
         {
             // Environ
-            "數學", "线性", "IT", "探索", "一个月包教包会", "30分钟立见成效",
+            "Desert", "Tundra", "Mountain", "Space", "Field", "Urban",
             // Stealth and cunning
-            "JavaScript架构", "设计模式"
+            "Hidden", "Covert", "Uncanny", "Scheming", "Decisive",
+            // Volitility
+            "Rowdy", "Dangerous", "Explosive", "Threatening", "Warring",
+            // Needs correction
+            "Bad", "Unnecessary", "Unknown", "Unexpected", "Waning",
+            // Organic Gems and materials
+            "Amber", "Bone", "Coral", "Ivory", "Jet", "Nacre", "Pearl", "Obsidian", "Glass",
+            // Regular Gems
+            "Agate", "Beryl", "Diamond", "Opal", "Ruby", "Onyx", "Sapphire", "Emerald", "Jade",
+            // Colors
+            "Red", "Orange", "Yellow", "Green", "Blue", "Violet",
         };
 
         private static readonly string[] _objects =
@@ -45,23 +57,16 @@ namespace AData.Console.MSSQL.Toolkit
         /// <summary>
         /// Initializes a new instance of the <see cref="NameSource"/> class.
         /// </summary>
-        public BookNameDataSource() : base(_types, _names)
+        public NameSource() : base(_types, _names)
         {
         }
 
-        /// <summary>
-        /// Get a value from the data source.
-        /// </summary>
-        /// <param name="generateContext">The generate context.</param>
-        /// <returns>
-        /// A new value from the data source.
-        /// </returns>
         public override object NextValue(IGenerateContext generateContext)
         {
             var a = _attributes[RandomGenerator.Current.Next(0, _attributes.Length)];
             var o = _objects[RandomGenerator.Current.Next(0, _objects.Length)];
 
-            return $"{a} {o} 书";
+            return $"{a} {o}";
         }
     }
 }

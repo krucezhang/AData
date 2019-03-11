@@ -1,12 +1,12 @@
 ﻿using AData.Business.Interface;
+using AData.DataGenerator;
+using AData.DataGenerator.Sources;
 using AData.MySQL;
 using AData.SQLServer.Models;
-using DataGenerator;
-using DataGenerator.Sources;
-using System;
-using System.Collections.Generic;
 using AData.Common.Extensions;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 
 namespace AData.Console.MSSQL.Controllers
 {
@@ -51,7 +51,7 @@ namespace AData.Console.MSSQL.Controllers
                     e.Property(p => p.BookId).DataSource(bookIds);
                     e.Property(p => p.StudentId).DataSource(studentIds);
                     e.Property(p => p.BorrowDate).DateTimeSource(new DateTime(2018, 1, 1), new DateTime(2019, 12, 12));
-                    e.Property(p => p.ExpectReturnDate).Value(u => u.BorrowDate.AddDays(expectRetutrnDays.RandomList()));
+                    e.Property(p => p.ExpectReturnDate).Value(u => u.BorrowDate.AddDays(expectRetutrnDays.Random()));
                 })
             );
 

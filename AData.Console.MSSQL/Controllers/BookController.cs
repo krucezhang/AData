@@ -1,15 +1,12 @@
 ﻿using AData.Business.Interface;
 using AData.Console.MSSQL.Toolkit;
+using AData.DataGenerator;
+using AData.DataGenerator.Sources;
 using AData.MongoDB.Models;
 using AData.SQLServer.Models;
-using DataGenerator;
-using DataGenerator.Sources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AData.Console.MSSQL.Controllers
 {
@@ -49,7 +46,7 @@ namespace AData.Console.MSSQL.Controllers
                 {
                     e.Property(p => p.Name).DataSource<BookNameDataSource>();
                     e.Property(p => p.Publisher).DataSource<PublisherSource>();
-                    e.Property(p => p.Author).DataSource<LastNameSource>();
+                    e.Property(p => p.Author).DataSource<NameSource>();
                     e.Property(p => p.Category).DataSource(categoryNames);
                     e.Property(p => p.RecordDate).DateTimeSource(new DateTime(1990, 1, 1), new DateTime(2019, 12, 12));
                 })

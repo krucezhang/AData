@@ -87,9 +87,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Toolkit\BookCategorySource.cs" />
     <Compile Include="Toolkit\BookNameDataSource.cs" />
+    <Compile Include="Toolkit\CitySource.cs" />
+    <Compile Include="Toolkit\PhoneSource.cs" />
     <Compile Include="Toolkit\PublisherSource.cs" />
     <Compile Include="Toolkit\ProfessionSource.cs" />
     <Compile Include="Toolkit\SerializeExtension.cs" />
+    <Compile Include="Toolkit\StreetSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -107,6 +110,10 @@
     <ProjectReference Include="..\AData.Common\AData.Common.csproj">
       <Project>{af92ce42-389f-4fc0-9941-d94285cd9446}</Project>
       <Name>AData.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AData.Generator\AData.DataGenerator.csproj">
+      <Project>{e1d14994-d67a-4bd0-aace-4eb38a38063e}</Project>
+      <Name>AData.DataGenerator</Name>
     </ProjectReference>
     <ProjectReference Include="..\AData.MongoDB\AData.MongoDB.csproj">
       <Project>{4db2c70d-c014-4d35-bf9d-d08089877b96}</Project>
