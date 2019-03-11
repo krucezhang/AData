@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 
 namespace AData.Common.Extensions
 {
-    public static class RandomExt
+    public static class RandomExtensions
     {
         public static int Next(this RandomNumberGenerator generator)
         {
