@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AData.Generator\AData.Generator.csproj">
+    <ProjectReference Include="..\AData.Generator\AData.DataGenerator.csproj">
       <Project>{e1d14994-d67a-4bd0-aace-4eb38a38063e}</Project>
-      <Name>AData.Generator</Name>
+      <Name>AData.DataGenerator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

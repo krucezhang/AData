@@ -26,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{40F5A98F-9
 		DbTable.docx = DbTable.docx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AData.Generator", "AData.Generator\AData.Generator.csproj", "{E1D14994-D67A-4BD0-AACE-4EB38A38063E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AData.DataGenerator", "AData.Generator\AData.DataGenerator.csproj", "{E1D14994-D67A-4BD0-AACE-4EB38A38063E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AData.GeneratorTest", "AData.GeneratorTest\AData.GeneratorTest.csproj", "{1B58CCE1-A1DC-4DC4-9E1B-42134C376691}"
 EndProject

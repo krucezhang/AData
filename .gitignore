@@ -20,5 +20,9 @@
 /AData.Persistence.Interface/obj
 /AData.SQLServer/bin
 /AData.SQLServer/obj
+/AData.Generator/bin
+/AData.Generator/obj
+/AData.GeneratorTest/bin
+/AData.GeneratorTest/obj
 /packages
 *.user
